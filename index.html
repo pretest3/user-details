@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="body">
+            <form id="userInputForm" class="first">    
+                <input type="text" id="firstName" placeholder="First Name" >
+                <input type="text" id="lastName" placeholder="Last Name" >
+                <input type="text" id="phone" placeholder="Contact Number">
+                <button class="submitButton" type="submit">SAVE</button>        
+            </form>
+            <div class="second">
+                <h2>Find User Data Below</h2>
+                <input id="search-box" class="search" type="search" placeholder="Search Name..." value="" onkeyup="searchData()">
+            </div>
+           <div class="third">
+
+           
+                <table id="myTable" class="user-table">
+                    <thead>
+                        <tr class="table-heading">
+                            <td class="table-col user-heading-text">Sl. No.</td>
+                            <td class="table-col user-heading-text" style="cursor: pointer" onclick="sortName()">Name</td>
+                            <td class="table-col user-heading-text">Contact</td>
+                            <td class="table-col user-heading-text">Delete</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+                    
+                </table>
+           
+           </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
